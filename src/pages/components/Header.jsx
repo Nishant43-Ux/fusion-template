@@ -131,7 +131,7 @@ const Header = () => {
                   </ul>
                 </div>
                 <a href="#" className="btn_1 d-none d-sm-block">
-                  Install Now
+                  Pre-Register
                 </a>
               </nav>
             </div>
