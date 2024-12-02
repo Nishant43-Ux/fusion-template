@@ -471,10 +471,11 @@ ul {
 
 /* line 247, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
 .body_bg {
-  background-image: url("../img/body_bg.png");
+  /* background-image: url("../img/body_bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #1a1718
 }
 
 /* line 251, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
