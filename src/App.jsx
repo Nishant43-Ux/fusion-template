@@ -9,6 +9,7 @@ import Team from "./pages/Team";
 import Blogs from "./pages/Blogs";
 import SingleBlog from "./pages/SingleBlog";
 import Contact from "./pages/Contact";
+import PreRegister from "./pages/PreRegister";
 
 
 function App() {
@@ -24,6 +25,7 @@ return (
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog-one" element={<SingleBlog />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/pre-register" element={<PreRegister/>} />
       </Routes>
     </Router>
   </div>

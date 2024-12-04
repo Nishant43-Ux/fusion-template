@@ -399,15 +399,6 @@ function Fighter() {
         </footer>
         {/*::footer_part end::*/}
       </div>
-      {/* jquery plugins here*/}
-      {/* popper js */}
-      {/* bootstrap js */}
-      {/* easing js */}
-      {/* swiper js */}
-      {/* swiper js */}
-      {/* particles js */}
-      {/* slick js */}
-      {/* custom js */}
     </>
   );
 }

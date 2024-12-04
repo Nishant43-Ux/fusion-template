@@ -108,7 +108,7 @@ const Header = () => {
                     </li>
                   </ul>
                 </div>
-                <a href="#" className="btn_1 d-none d-sm-block">
+                <a href="/pre-register" className="btn_1 d-none d-sm-block">
                   Pre-Register
                 </a>
               </nav>
