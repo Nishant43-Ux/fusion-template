@@ -1,5 +1,3 @@
-
-
 function Fighter() {
   return (
     <>
@@ -10,7 +8,6 @@ function Fighter() {
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
       <div className="body_bg">
-       
         {/* breadcrumb start*/}
         <section className="breadcrumb breadcrumb_bg">
           <div className="container">
@@ -18,14 +15,61 @@ function Fighter() {
               <div className="col-lg-12">
                 <div className="breadcrumb_iner text-center">
                   <div className="breadcrumb_iner_item">
-                    <h2>Fighter</h2>
+                    <h2>Fusion</h2>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* breadcrumb start*/}
+        {/* breadcrumb end*/}
+
+        {/* Fusion content section */}
+        <section className="fusion_content section_padding">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center">
+                <h2>Fusion: Redefining the Virtual Experience</h2>
+                <p>Welcome to Fusion</p>
+                <p>
+                  Fusion isn’t just a game — it’s a universe. Designed to bring
+                  people together, Fusion blends the excitement of gaming, the
+                  creativity of virtual worlds, and the power of social
+                  connection into one seamless platform.
+                </p>
+                <h3>Play. Explore. Create.</h3>
+                <p>
+                  Dive into thrilling adventures across diverse environments,
+                  from high-stakes battles on Planet Doom to the vibrant energy
+                  of The Distracted Globe. Customize your avatar with
+                  unparalleled detail, build your unique worlds, and compete in
+                  dynamic challenges.
+                </p>
+                <h3>More Than Gaming</h3>
+                <p>
+                  Fusion is a hub for entertainment. Watch your favorite anime,
+                  connect with friends, and express yourself in ways you’ve
+                  never imagined. It’s where the virtual meets the real,
+                  blurring boundaries and sparking new possibilities.
+                </p>
+                <h3>Join the Revolution</h3>
+                <p>
+                  Fusion is more than a project — it’s a vision for the future
+                  of entertainment and community. Step inside and see what’s
+                  possible when creativity and technology collide.
+                </p>
+                <button
+                  className="btn btn-primary pre_register_btn mt-3"
+                  onClick={() => alert("Pre-registration coming soon!")}
+                >
+                  Pre-Register Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Fusion content section end */}
+
         {/*::client logo part end::*/}
         <section className="client_logo">
           <div className="container">
@@ -58,7 +102,6 @@ function Fighter() {
             </div>
           </div>
         </section>
-        {/*::client logo part end::*/}
         {/* gallery_part part start*/}
         <section className="gallery_part section_padding">
           <div className="container">
@@ -369,4 +412,4 @@ function Fighter() {
   );
 }
 
-export default Fighter
+export default Fighter;

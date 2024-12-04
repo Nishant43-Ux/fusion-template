@@ -1,9 +1,5 @@
 import  { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-
-<a className="nav-link">
-  <Link to="/fighter">Fighter</Link>
-</a>;
+// import { Link } from "react-router-dom";
 
 const Header = () => {
   const [headerClass, setHeaderClass] = useState("main_menu single_page_menu");
@@ -67,11 +63,7 @@ const Header = () => {
                         Fusion
                       </a>
                     </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="/fighter">
-                        Fighter
-                      </a>
-                    </li>
+                    
                     <li className="nav-item">
                       <a className="nav-link" href="/team">
                         Team
@@ -103,24 +95,10 @@ const Header = () => {
                       </div>
                     </li>
                     <li className="nav-item dropdown">
-                      <a
-                        className="nav-link dropdown-toggle"
-                        href="/blogs"
-                        id="navbarDropdown1"
-                        role="button"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Pages
-                      </a>
                       <div
                         className="dropdown-menu"
                         aria-labelledby="navbarDropdown1"
                       >
-                        <a className="dropdown-item" href="elements.html">
-                          Elements
-                        </a>
                       </div>
                     </li>
                     <li className="nav-item">
