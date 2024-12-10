@@ -1,0 +1,91 @@
+.team_factions {
+  padding: 50px 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.section_title h2 {
+  color: #ffcc00;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Faction Card Styling */
+.faction_card {
+  background: linear-gradient(145deg, #222, #2b2b2b);
+  color: #fff;
+  border: 2px solid #444;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  height: 400px; /* Fixed height for uniformity */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.faction_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.4);
+}
+
+/* Team Image Styling */
+.team_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #444;
+}
+
+/* Team Member Name */
+.faction_card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+/* Role and Faction Name Styling */
+.faction_card p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.faction_name {
+  font-weight: bold;
+  color: #f39c12;
+  margin-top: 10px;
+}
+
+/* Hover Effect Enhancements */
+.faction_card:hover .team_img {
+  border-color: #ffcc00;
+}
+
+/* Faction-specific styles */
+.faction_tech {
+  border: 2px solid #00bfff;
+}
+
+.faction_art {
+  border: 2px solid #ff69b4;
+}
+
+.faction_dev {
+  border: 2px solid #32cd32;
+}
+
+.faction_design {
+  border: 2px solid #ffa07a;
+}
+
+.faction_lead {
+  border: 2px solid #ffd700;
+}
+
+.faction_marketing {
+  border: 2px solid #ff4500;
+}

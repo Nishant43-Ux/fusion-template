@@ -1,0 +1,31 @@
+.contact-section {
+  position: relative;
+}
+
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  background-image: url('/path/to/your-watermark.png'); /* Replace with your image path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1; /* Set the opacity to make it subtle */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+   pointer-events: none; 
+}
+
+/* Ensure form and other content are above the watermark */
+.contact-section .container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.watermark img {
+  width: 600px;  /* Adjust width as needed */
+  height: auto;  /* Maintain aspect ratio */
+  max-width: 200%; /* Ensure responsiveness */
+  display: block;
+}

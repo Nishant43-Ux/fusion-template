@@ -17,7 +17,7 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener on component unmount
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -32,8 +32,18 @@ const Header = () => {
             <div className="col-lg-12">
               <nav className="navbar navbar-expand-lg navbar-light">
                 <a className="navbar-brand" href="/">
-                  {" "}
-                  <img src="img/logo.png" alt="logo" />{" "}
+                  {/* Conditionally render the logo */}
+                  {headerClass !== "main_menu single_page_menu" && (
+                    <img
+                      src="img/logos/default_logo.png"
+                      alt="logo"
+                      style={{
+                        maxWidth: "36%",
+                        height: "auto",
+                        display: "block",
+                      }}
+                    />
+                  )}
                 </a>
                 <button
                   className="navbar-toggler"
@@ -63,7 +73,7 @@ const Header = () => {
                         Fusion
                       </a>
                     </li>
-                    
+
                     <li className="nav-item">
                       <a className="nav-link" href="/team">
                         Team
@@ -98,8 +108,7 @@ const Header = () => {
                       <div
                         className="dropdown-menu"
                         aria-labelledby="navbarDropdown1"
-                      >
-                      </div>
+                      ></div>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" href="/contact-us">
