@@ -1,0 +1,57 @@
+/* Responsive Banner Styling */
+.banner_part {
+  padding: 100px 0;
+  text-align: left;
+  position: relative;
+}
+
+.banner_text {
+  max-width: 100%;
+}
+
+.banner_text h1 {
+  font-size: 3rem;
+  color: red;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.banner_text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: white;
+}
+
+.btn_1 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn_1:hover {
+  background-color: darkred;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .banner_part {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(145deg, #1a1a1a, black); /* Add a gradient for mobile view */
+  }
+
+  .banner_text h1 {
+    font-size: 2rem;
+  }
+
+  .banner_text p {
+    font-size: 1rem;
+  }
+}
