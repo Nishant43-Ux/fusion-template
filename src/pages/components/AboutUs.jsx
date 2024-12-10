@@ -134,7 +134,7 @@ function AboutUs() {
       {/* Call-to-Action Section */}
       <section
         className="cta section_padding text-center"
-        style={{ backgroundColor: "#000", color: "#fff" }}
+        style={{  color: "#1a1718" }}
       >
         <div className="container">
           <h2 style={{ color: "#dc143c" }}>Be a Part of the Future</h2>

@@ -9,7 +9,7 @@ const Header = () => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setHeaderClass(
-          "main_menu single_page_menu menu_fixed animated fadeInDown"
+          "main_menu single_page_menu menu_fixed animated menu_fixed fadeInSlow"
         );
       } else {
         setHeaderClass("main_menu single_page_menu");

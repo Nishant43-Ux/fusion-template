@@ -28,3 +28,29 @@
     margin-left: 10px;
   }
 }
+
+/* Gradual fade-in animation */
+@keyframes fadeInSlow {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInSlow {
+  animation: fadeInSlow 0.8s ease-in-out forwards;
+}
+
+
+.menu_fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; /* Background for the sticky header */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+}

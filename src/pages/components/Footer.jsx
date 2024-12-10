@@ -16,10 +16,10 @@ const Footer = () => (
                     className="-img"
                   />{" "}
                 </a>
-                <p>
+                {/* <p>
                   Heaven fruitful doesn&apos;t over lesser days appear creeping
                   seasons so behold bearing days open
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="col-sm-6 col-lg-3">
@@ -47,10 +47,9 @@ const Footer = () => (
             <div className="col-lg-8">
               <div className="copyright_text">
                 <p>
-                  {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
                   Copyright © All rights reserved | This website is made{" "}
                   <i className="ti-heart" aria-hidden="true" /> by{" "}
-                  <a href="https://colorlib.com" target="_blank">
+                  <a href="/" target="_blank">
                     IceShard Games
                   </a>
                   {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
