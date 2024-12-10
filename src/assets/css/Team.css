@@ -4,7 +4,7 @@
   color: #fff;
 }
 
-.section_title h2 {
+.section_tittle h2 {
   color: #ffcc00;
   font-size: 2.5rem;
   margin-bottom: 30px;
@@ -20,7 +20,7 @@
   border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-  height: 400px; /* Fixed height for uniformity */
+  min-height: 400px; /* Allow dynamic height for varying content */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,6 +39,7 @@
   border-radius: 50%;
   margin-bottom: 15px;
   border: 3px solid #444;
+  max-width: 100%; /* Ensure image scales down on smaller screens */
 }
 
 /* Team Member Name */
@@ -46,12 +47,14 @@
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #ffcc00;
+  word-wrap: break-word; /* Prevent overflow from long names */
 }
 
 /* Role and Faction Name Styling */
 .faction_card p {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Smaller text for better responsiveness */
   margin: 5px 0;
+  word-wrap: break-word; /* Prevent text overflow */
 }
 
 .faction_name {
@@ -74,10 +77,6 @@
   border: 2px solid #ff69b4;
 }
 
-.faction_dev {
-  border: 2px solid #32cd32;
-}
-
 .faction_design {
   border: 2px solid #ffa07a;
 }
@@ -88,4 +87,45 @@
 
 .faction_marketing {
   border: 2px solid #ff4500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faction_card {
+    padding: 15px;
+    min-height: auto; /* Let cards adjust dynamically to content */
+  }
+
+  .faction_card h4 {
+    font-size: 1.2rem; /* Reduce name size */
+  }
+
+  .faction_card p {
+    font-size: 0.9rem; /* Smaller font for paragraphs */
+  }
+
+  .team_img {
+    width: 120px; /* Adjust image size */
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faction_card {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .faction_card h4 {
+    font-size: 1rem; /* Further reduce name size */
+  }
+
+  .faction_card p {
+    font-size: 0.8rem; /* Smaller font for mobile */
+  }
+
+  .team_img {
+    width: 100px;
+    height: 100px;
+  }
 }

@@ -48,7 +48,7 @@ function Team() {
               <div className="col-md-4">
                 <div className="faction_card text-center faction_lead">
                   <img
-                    src="img/Team/Ayush_1.jpg"
+                    src="img/Team/ceo.jpg"
                     alt="Nishant Latiyal"
                     className="team_img"
                   />

@@ -29,8 +29,7 @@ const Footer = () => (
                   Address : 73, Central School Scheme, Airforce Colony,
                   Jodhpur,342011
                 </p>
-                <p>Phone : +91 8503022066</p>
-                <p>Email : ayush.pahuja090@gmail.com</p>
+                <p>Email : contact@iceshardgames.com</p>
               </div>
             </div>
             <div className="col-sm-6 col-lg-3">
