@@ -170,13 +170,6 @@ function Team() {
             </div>
           </div>
         </section>
-
-        {/* Footer */}
-        <footer className="footer_part">
-          <div className="container text-center">
-            <p>© 2024 Gaming Company. All Rights Reserved.</p>
-          </div>
-        </footer>
       </div>
     </>
   );

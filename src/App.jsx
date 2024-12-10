@@ -10,6 +10,7 @@ import Blogs from "./pages/Blogs";
 import SingleBlog from "./pages/SingleBlog";
 import Contact from "./pages/Contact";
 import PreRegister from "./pages/PreRegister";
+import Footer from "./pages/components/Footer";
 
 
 function App() {
@@ -19,15 +20,16 @@ return (
     <Router>
       <Routes>
         {/* <Routes path="/" element={<Home />} /> */}
-        <Route path="/fighter" element={<Fighter />} />
+        <Route path="/fusion" element={<Fighter />} />
         <Route path="/team" element={<Team />} />
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog-one" element={<SingleBlog />} />
         <Route path="/contact-us" element={<Contact />} />
-        <Route path="/pre-register" element={<PreRegister/>} />
+        <Route path="/pre-register" element={<PreRegister />} />
       </Routes>
     </Router>
+    <Footer />
   </div>
 );
 }

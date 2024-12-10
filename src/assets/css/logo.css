@@ -1,0 +1,30 @@
+/* Default logo style */
+.responsive-img {
+  max-width: 36%;
+  height: auto;
+  display: block;
+}
+.-img  {
+  max-width: 46%;
+  height: auto;
+  display: block;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* White glow with slight transparency */
+  border-radius: 8px; /* Optional: to soften edges */
+}
+
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .responsive-img {
+    max-width: 30%;
+    margin-left: 10px;
+  }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+  .responsive-img {
+    max-width: 25%;
+    margin-left: 10px;
+  }
+}

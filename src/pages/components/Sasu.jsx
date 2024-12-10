@@ -1,271 +1,95 @@
 function Sasu() {
   return (
     <>
-      {/* use sasu part end*/}
-      <section className="Latest_War">
+      {/* Roadmap Section */}
+      <section className="Roadmap_Section">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="section_tittle text-center">
-                <h2>Latest War Fight</h2>
+                <h2>Our Game Development Roadmap</h2>
+                <p>
+                  Embark on our journey as we conquer milestones, level by
+                  level!
+                </p>
               </div>
             </div>
           </div>
-          <div className="row justify-content-center align-items-center">
-            <div className="col-lg-12">
-              <div className="Latest_War_text">
-                <div className="row justify-content-center align-items-center h-100">
-                  <div className="col-lg-6">
-                    <div className="single_war_text text-center">
-                      <img src="img/favicon.png" alt="" />
-                      <h4>Open War chalange</h4>
-                      <p>27 june , 2020</p>
-                      <a href="#">view fight</a>
-                      <div className="war_text_item d-flex justify-content-around align-items-center">
-                        <img src="img/war_logo_1.png" alt="" />
-                        <h2>
-                          190<span>vs</span>189
-                        </h2>
-                        <img src="img/war_logo_2.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" className="btn_2">
-                  Watch Tutorial
-                </a>
+
+          <div className="row roadmap_timeline">
+            {/* Quarter 1 */}
+            <div className="col-lg-6 mb-4">
+              <div className="roadmap_item bg-dark text-white text-center p-4">
+                <h3>Quarter 1</h3>
+                <h4>🕹️ Dungeon Boss Defeated</h4>
+                <p>
+                  We fought the boss in the dungeon and acquired the ultimate
+                  squad for our journey ahead.
+                </p>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="latest_war_list">
-                <div className="single_war_text">
-                  <div className="war_text_item d-flex justify-content-around align-items-center">
-                    <img src="img/war_logo_1.png" alt="" />
-                    <h2>
-                      190<span>vs</span>189
-                    </h2>
-                    <img src="img/war_logo_2.png" alt="" />
-                    <div className="war_date">
-                      <a href="#">27 june 2020</a>
-                      <p>Open War chalange</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="single_war_text">
-                  <div className="war_text_item d-flex justify-content-around align-items-center">
-                    <img src="img/war_logo_1.png" alt="" />
-                    <h2>
-                      190<span>vs</span>189
-                    </h2>
-                    <img src="img/war_logo_2.png" alt="" />
-                    <div className="war_date">
-                      <a href="#">27 june 2020</a>
-                      <p>Open War chalange</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="single_war_text">
-                  <div className="war_text_item d-flex justify-content-around align-items-center">
-                    <img src="img/war_logo_1.png" alt="" />
-                    <h2>
-                      190<span>vs</span>189
-                    </h2>
-                    <img src="img/war_logo_2.png" alt="" />
-                    <div className="war_date">
-                      <a href="#">27 june 2020</a>
-                      <p>Open War chalange</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="single_war_text">
-                  <div className="war_text_item d-flex justify-content-around align-items-center">
-                    <img src="img/war_logo_1.png" alt="" />
-                    <h2>
-                      190<span>vs</span>189
-                    </h2>
-                    <img src="img/war_logo_2.png" alt="" />
-                    <div className="war_date">
-                      <a href="#">27 june 2020</a>
-                      <p>Open War chalange</p>
-                    </div>
-                  </div>
-                </div>
+
+            {/* Quarter 2 */}
+            <div className="col-lg-6 mb-4">
+              <div className="roadmap_item bg-primary text-white text-center p-4">
+                <h3>Quarter 2</h3>
+                <h4>🎨 Concept Art Quest</h4>
+                <p>
+                  Our alliance worked hard to complete the quest of concept art
+                  collection, bringing our vision to life.
+                </p>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="Latest_War_text Latest_War_bg_1">
-                <div className="row justify-content-center align-items-center h-100">
-                  <div className="col-lg-6">
-                    <div className="single_war_text text-center">
-                      <img src="img/favicon.png" alt="" />
-                      <h4>Open War chalange</h4>
-                      <p>27 june , 2020</p>
-                      <a href="#">view fight</a>
-                      <div className="war_text_item d-flex justify-content-around align-items-center">
-                        <img src="img/war_logo_1.png" alt="" />
-                        <h2>
-                          190<span>vs</span>189
-                        </h2>
-                        <img src="img/war_logo_2.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" className="btn_2">
-                  Watch Tutorial
-                </a>
+
+            {/* Quarter 3 */}
+            <div className="col-lg-6 mb-4">
+              <div className="roadmap_item bg-success text-white text-center p-4">
+                <h3>Quarter 3</h3>
+                <h4>🧙‍♂️ Coding Wizards Summoned</h4>
+                <p>
+                  We summoned coding wizards to develop the core mechanics and
+                  gameplay features.
+                </p>
+              </div>
+            </div>
+
+            {/* Quarter 4 */}
+            <div className="col-lg-6 mb-4">
+              <div className="roadmap_item bg-danger text-white text-center p-4">
+                <h3>Quarter 4</h3>
+                <h4>🚀 Beta Launch Ready</h4>
+                <p>
+                  After rigorous playtesting, we are ready to launch the beta
+                  version for early adventurers!
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* use sasu part end*/}
-      {/* gallery_part part start*/}
+
+      {/* Meet Our Squad section start */}
       <section className="gallery_part section_padding">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-5">
               <div className="section_tittle text-center">
-                <h2>All Fighter</h2>
+                <h2>Meet Our Squad</h2>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="gallery_part_item">
-                <div className="grid">
-                  <div className="grid-sizer" />
-                  <a
-                    href="img/gallery/gallery_item_1.png"
-                    className="grid-item bg_img img-gal grid-item--height-1"
-                    style={{
-                      backgroundImage: 'url("img/gallery/gallery_item_1.png")',
-                    }}
-                  >
-                    <div className="single_gallery_item">
-                      <div className="single_gallery_item_iner">
-                        <div className="gallery_item_text">
-                          <i className="ti-zoom-in" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    href="img/gallery/gallery_item_2.png"
-                    className="grid-item bg_img img-gal"
-                    style={{
-                      backgroundImage: 'url("img/gallery/gallery_item_2.png")',
-                    }}
-                  >
-                    <div className="single_gallery_item">
-                      <div className="single_gallery_item_iner">
-                        <div className="gallery_item_text">
-                          <i className="ti-zoom-in" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    href="img/gallery/gallery_item_3.png"
-                    className="grid-item bg_img img-gal"
-                    style={{
-                      backgroundImage: 'url("img/gallery/gallery_item_3.png")',
-                    }}
-                  >
-                    <div className="single_gallery_item">
-                      <div className="single_gallery_item_iner">
-                        <div className="gallery_item_text">
-                          <i className="ti-zoom-in" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    href="img/gallery/gallery_item_5.png"
-                    className="grid-item bg_img img-gal grid-item--height-2"
-                    style={{
-                      backgroundImage: 'url("img/gallery/gallery_item_5.png")',
-                    }}
-                  >
-                    <div className="single_gallery_item">
-                      <div className="single_gallery_item_iner">
-                        <div className="gallery_item_text">
-                          <i className="ti-zoom-in" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    href="img/gallery/gallery_item_7.png"
-                    className="grid-item bg_img img-gal grid-item--height-2"
-                    style={{
-                      backgroundImage: 'url("img/gallery/gallery_item_7.png")',
-                    }}
-                  >
-                    <div className="single_gallery_item">
-                      <div className="single_gallery_item_iner">
-                        <div className="gallery_item_text">
-                          <i className="ti-zoom-in" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    href="img/gallery/gallery_item_6.png"
-                    className="grid-item bg_img img-gal grid-item--width-1"
-                    style={{
-                      backgroundImage: 'url("img/gallery/gallery_item_6.png")',
-                    }}
-                  >
-                    <div className="single_gallery_item">
-                      <div className="single_gallery_item_iner">
-                        <div className="gallery_item_text">
-                          <i className="ti-zoom-in" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    href="img/gallery/gallery_item_4.png"
-                    className="grid-item bg_img img-gal sm_weight  grid-item--height-1"
-                    style={{
-                      backgroundImage: 'url("img/gallery/gallery_item_4.png")',
-                    }}
-                  >
-                    <div className="single_gallery_item">
-                      <div className="single_gallery_item_iner">
-                        <div className="gallery_item_text">
-                          <i className="ti-zoom-in" />
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* gallery_part part end*/}
-      <section className="upcomming_war">
-        <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
-              <div className="section_tittle text-center">
-                <h2>Upcoming Fighter</h2>
-              </div>
-            </div>
-          </div>
-          <div className="upcomming_war_iner">
-            <div className="row justify-content-center align-items-center h-100">
-              <div className="col-10 col-sm-5 col-lg-3">
-                <div className="upcomming_war_counter text-center">
-                  <h2>Dark Dragon</h2>
-                  <div id="timer" className="d-flex justify-content-between">
-                    <div id="days" />
-                    <div id="hours" />
-                  </div>
-                </div>
+              <p className="text-center">
+                Our team is composed of highly skilled members, each with unique
+                specialties. From fierce warriors who tackle challenges head-on
+                to strategic minds that navigate complex puzzles, every member
+                plays a crucial role in our journey.
+              </p>
+              <div className="text-center mt-4">
+                <a href="/team" className="btn_2">
+                  Explore the Team
+                </a>
               </div>
             </div>
           </div>
@@ -275,4 +99,4 @@ function Sasu() {
   );
 }
 
-export default Sasu
+export default Sasu;

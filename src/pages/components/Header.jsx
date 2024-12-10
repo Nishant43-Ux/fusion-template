@@ -1,4 +1,5 @@
 import  { useState, useEffect } from "react";
+import "../../assets/css/logo.css"
 // import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -37,11 +38,7 @@ const Header = () => {
                     <img
                       src="img/logos/default_logo.png"
                       alt="logo"
-                      style={{
-                        maxWidth: "36%",
-                        height: "auto",
-                        display: "block",
-                      }}
+                      className="responsive-img"
                     />
                   )}
                 </a>
@@ -69,7 +66,7 @@ const Header = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/fighter">
+                      <a className="nav-link" href="/fusion">
                         Fusion
                       </a>
                     </li>
@@ -79,7 +76,7 @@ const Header = () => {
                         Team
                       </a>
                     </li>
-                    <li className="nav-item dropdown">
+                    {/* <li className="nav-item dropdown">
                       <a
                         className="nav-link dropdown-toggle"
                         href="/blogs"
@@ -103,7 +100,7 @@ const Header = () => {
                           Single blog
                         </a>
                       </div>
-                    </li>
+                    </li> */}
                     <li className="nav-item dropdown">
                       <div
                         className="dropdown-menu"

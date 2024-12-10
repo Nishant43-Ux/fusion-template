@@ -711,16 +711,7 @@ function SingleBlog() {
           </div>
         </div>
       </footer>
-      {/*::footer_part end::*/}
-      {/* jquery plugins here*/}
-      {/* popper js */}
-      {/* bootstrap js */}
-      {/* easing js */}
-      {/* swiper js */}
-      {/* swiper js */}
-      {/* particles js */}
-      {/* slick js */}
-      {/* custom js */}
+   
     </>
   );
 }
