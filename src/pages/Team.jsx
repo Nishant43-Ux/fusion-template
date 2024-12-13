@@ -66,7 +66,7 @@ function Team() {
               <div className="col-md-4">
                 <div className="faction_card text-center faction_lead">
                   <img
-                    src="img/Team/Ayush_1.jpg"
+                    src="img/Team/ayush_saini.jpg"
                     alt="Ayush Saini"
                     className="team_img"
                   />
@@ -83,7 +83,7 @@ function Team() {
               <div className="col-md-4">
                 <div className="faction_card faction_marketing text-center">
                   <img
-                    src="img/Team/Ayush_1.jpg"
+                    src="img/Team/shaswat.jpg"
                     alt="Shashwat"
                     className="team_img"
                   />
@@ -102,7 +102,7 @@ function Team() {
               <div className="col-md-4">
                 <div className="faction_card text-center faction_design">
                   <img
-                    src="img/Team/Ayush_1.jpg"
+                    src="img/Team/khwaish.jpg"
                     alt="Khwaish Verma"
                     className="team_img"
                   />
@@ -119,7 +119,7 @@ function Team() {
               <div className="col-md-4">
                 <div className="faction_card text-center faction_design">
                   <img
-                    src="img/Team/Ayush_1.jpg"
+                    src="img/Team/pranav.jpg"
                     alt="Pranav Kapoor"
                     className="team_img"
                   />
@@ -138,7 +138,7 @@ function Team() {
               <div className="col-md-4">
                 <div className="faction_card text-center faction_art">
                   <img
-                    src="img/Team/Ayush_1.jpg"
+                    src="img/Team/aryan.jpg"
                     alt="Aryan"
                     className="team_img"
                   />

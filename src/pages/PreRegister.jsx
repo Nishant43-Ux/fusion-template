@@ -1,4 +1,5 @@
-import  { useState } from "react";
+import { useState } from "react";
+import { sendEmailToDB } from "../utils/pre-register";
 
 function PreRegister() {
   const [email, setEmail] = useState("");
@@ -8,25 +9,17 @@ function PreRegister() {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        "https://your-backend-endpoint.com/register",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ email }),
-        }
-      );
+      const response = await sendEmailToDB(email); // Use the sendEmailToDB utility
 
-      if (response.ok) {
+      if (response.insertedId) {
         setMessage("Thank you for pre-registering!");
         setEmail("");
       } else {
         setMessage("Something went wrong. Please try again.");
       }
-    } catch {
+    } catch (error) {
       setMessage("Error: Unable to connect to the server.");
+      console.error("Pre-registration failed:", error);
     }
   };
 
@@ -97,8 +90,6 @@ function PreRegister() {
             </div>
           </div>
         </section>
-     
-
       </div>
     </>
   );
