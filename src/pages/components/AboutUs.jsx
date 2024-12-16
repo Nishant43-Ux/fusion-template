@@ -91,7 +91,7 @@ function AboutUs() {
             {[
               { title: "Immersive Worlds", img: "img/home/immersive.jpg" },
               { title: "Customizable Avatars", img: "img/home/avatars.jpg" },
-              { title: "Social Interaction", img: "img/home/media.jpg" },
+              { title: "Social Interaction", img: "img/home/social_.jpg" },
               { title: "Cross-Platform Play", img: "img/home/platforms.jpg" },
             ].map((feature, index) => (
               <div className="col-md-6 mb-4" key={index}>
