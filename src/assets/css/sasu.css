@@ -1,0 +1,113 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Press+Start+2P&display=swap");
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: "Cinzel", serif;
+}
+
+/* Roadmap Section */
+.Roadmap_Section {
+  padding: 80px 0;
+  background: radial-gradient(circle, #2b0000, #000000);
+  position: relative;
+  overflow: hidden;
+}
+
+.Roadmap_Section::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(255, 0, 0, 0.8), transparent);
+  border-radius: 50%;
+  filter: blur(120px);
+  animation: bloodGlitter 8s infinite alternate;
+}
+
+@keyframes bloodGlitter {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+.roadmap_heading {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  color: #ff4d4d;
+  text-shadow: 0 0 10px red;
+}
+
+.roadmap_subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ddd;
+}
+
+.roadmap_item {
+  background: linear-gradient(145deg, #4d0000, #8b0000);
+  color: #fff;
+  border: 1px solid #700000;
+  box-shadow: 0 0 10px 3px rgba(255, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.roadmap_item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.9);
+}
+
+.blood_glow h3,
+.blood_glow h4 {
+  color: #ff4d4d;
+  text-shadow: 0 0 8px red;
+}
+
+.blood_glow p {
+  color: #eee;
+}
+
+/* Meet Our Squad */
+.gallery_part {
+  background-color: #1a0000;
+  padding: 80px 0;
+}
+
+.team_heading {
+  font-family: "Press Start 2P", cursive;
+  color: #ff4d4d;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.team_description {
+  font-size: 1rem;
+}
+
+.btn_explore_team {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(145deg, #ff0000, #8b0000);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.7);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn_explore_team:hover {
+  background: #ff4d4d;
+  box-shadow: 0 0 20px 4px rgba(255, 0, 0, 0.9);
+  transform: scale(1.05);
+}

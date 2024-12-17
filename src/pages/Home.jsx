@@ -10,8 +10,7 @@ function Home() {
       <Banner />
       <ClientLogo />
       <AboutUs/>
-{/* review livestreams */}
-      {/* <Livestreams/>  */}
+
       <Sasu/>
       
     </>

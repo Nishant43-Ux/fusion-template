@@ -134,7 +134,7 @@ function AboutUs() {
       {/* Call-to-Action Section */}
       <section
         className="cta section_padding text-center"
-        style={{  color: "#1a1718" }}
+        style={{ color: "#1a1718" }}
       >
         <div className="container">
           <h2 style={{ color: "#dc143c" }}>Be a Part of the Future</h2>
@@ -144,7 +144,7 @@ function AboutUs() {
             journey before anyone else.
           </p>
           <a
-            href="#"
+            href="/pre-register"
             className="btn btn-danger"
             style={{ backgroundColor: "#dc143c", borderColor: "#dc143c" }}
           >

@@ -1,0 +1,132 @@
+/* Importing Font */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Press+Start+2P&display=swap");
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: "Cinzel", serif;
+}
+
+.section_padding {
+  padding: 60px 0;
+}
+
+/* Banner Section */
+.pre_register_banner {
+  background: linear-gradient(145deg, #4d0000, #8b0000);
+  text-align: center;
+  padding: 80px 0;
+}
+
+.pre_register_heading {
+  font-size: 3rem;
+  color: #ff4d4d;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 0 0 10px red;
+}
+
+.pre_register_subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Features Section */
+.why_pre_register .section_heading {
+  color: #ff4d4d;
+  text-shadow: 0 0 10px red;
+}
+
+.feature_cards {
+  display: flex;
+  /* gap: 20px; */
+}
+
+.feature_card {
+  background: #1a0000;
+  border: 2px solid #700000;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+
+.feature_icon {
+  font-size: 3rem;
+  color: #ff4d4d;
+  margin-bottom: 15px;
+}
+
+.feature_icon_large {
+  font-size: 4rem;
+  color: #ff4d4d;
+  margin-right: 20px;
+}
+
+.horizontal_card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+}
+
+.feature_title {
+  font-size: 1.5rem;
+  color: #ff4d4d;
+}
+
+.feature_desc {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* Form Section */
+.form_wrapper {
+  background: #1a0000;
+  padding: 40px;
+  border: 2px solid #700000;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.form_heading {
+  color: #ff4d4d;
+  text-shadow: 0 0 10px red;
+}
+
+.form-control {
+  background: #2b0000;
+  color: #fff;
+  border: 1px solid #700000;
+  margin-bottom: 15px;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.btn_submit {
+  background: linear-gradient(145deg, #ff4d4d, #8b0000);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+}
+
+.alert_message {
+  margin-top: 15px;
+  color: #ff4d4d;
+  text-align: center;
+}
