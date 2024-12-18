@@ -1,24 +1,25 @@
-import  { useState, useEffect } from "react";
-import "../../assets/css/logo.css"
-// import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import "../../assets/css/logo.css";
 
 const Header = () => {
   const [headerClass, setHeaderClass] = useState("main_menu single_page_menu");
+  const [isScrolled, setIsScrolled] = useState(false); // Track scroll state
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setHeaderClass(
-          "main_menu single_page_menu menu_fixed animated menu_fixed fadeInSlow"
+          "main_menu single_page_menu menu_fixed animated fadeInSlow"
         );
+        setIsScrolled(true); // Set scrolled to true
       } else {
         setHeaderClass("main_menu single_page_menu");
+        setIsScrolled(false); // Set scrolled to false
       }
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -33,7 +34,6 @@ const Header = () => {
             <div className="col-lg-12">
               <nav className="navbar navbar-expand-lg navbar-light">
                 <a className="navbar-brand" href="/">
-                  {/* Conditionally render the logo */}
                   {headerClass !== "main_menu single_page_menu" && (
                     <img
                       src="img/logos/default_logo.png"
@@ -61,54 +61,42 @@ const Header = () => {
                 >
                   <ul className="navbar-nav">
                     <li className="nav-item">
-                      <a className="nav-link" href="/">
+                      <a
+                        className={`nav-link ${
+                          isScrolled ? "scrolled" : "top"
+                        }`}
+                        href="/"
+                      >
                         Home
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/fusion">
+                      <a
+                        className={`nav-link ${
+                          isScrolled ? "scrolled" : "top"
+                        }`}
+                        href="/fusion"
+                      >
                         Fusion
                       </a>
                     </li>
-
                     <li className="nav-item">
-                      <a className="nav-link" href="/team">
+                      <a
+                        className={`nav-link ${
+                          isScrolled ? "scrolled" : "top"
+                        }`}
+                        href="/team"
+                      >
                         Team
                       </a>
                     </li>
-                    {/* <li className="nav-item dropdown">
-                      <a
-                        className="nav-link dropdown-toggle"
-                        href="/blogs"
-                        id="navbarDropdown"
-                        role="button"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Blog
-                      </a>
-                      <div
-                        className="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <a className="dropdown-item" href="/blogs">
-                          {" "}
-                          Blog
-                        </a>
-                        <a className="dropdown-item" href="/blog-one">
-                          Single blog
-                        </a>
-                      </div>
-                    </li> */}
-                    <li className="nav-item dropdown">
-                      <div
-                        className="dropdown-menu"
-                        aria-labelledby="navbarDropdown1"
-                      ></div>
-                    </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/contact-us">
+                      <a
+                        className={`nav-link ${
+                          isScrolled ? "scrolled" : "top"
+                        }`}
+                        href="/contact-us"
+                      >
                         Contact
                       </a>
                     </li>

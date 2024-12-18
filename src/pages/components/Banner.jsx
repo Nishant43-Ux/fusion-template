@@ -1,3 +1,4 @@
+import "../../assets/css/hero.css"
 const Banner = () => (
   <>
     {/* banner part start */}

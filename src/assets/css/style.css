@@ -2206,7 +2206,7 @@ ul {
 
 /* line 21, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link {
-  color: #000;
+  color:white;
   font-size: 15px;
   padding: 43px 23px;
   font-family: "Poppins", sans-serif;
