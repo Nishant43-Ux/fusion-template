@@ -11,6 +11,8 @@ import SingleBlog from "./pages/SingleBlog";
 import Contact from "./pages/Contact";
 import PreRegister from "./pages/PreRegister";
 import Footer from "./pages/components/Footer";
+import AdminLogin from "./pages/AdminLogin";
+import AdminPanel from "./pages/AdminPanel";
 
 
 function App() {
@@ -27,6 +29,8 @@ return (
         <Route path="/blog-one" element={<SingleBlog />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/pre-register" element={<PreRegister />} />
+        <Route path="/login" element={<AdminLogin />} />
+        <Route path="/admin" element={<AdminPanel />} />
       </Routes>
     </Router>
     <Footer />
