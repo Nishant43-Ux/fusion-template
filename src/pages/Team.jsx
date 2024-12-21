@@ -167,6 +167,25 @@ function Team() {
                   </p>
                 </div>
               </div>
+
+              {/* Editor/Manager */}
+              <div className="col-md-4">
+                <div className="faction_card text-center faction_content">
+                  <img
+                    src="img/Team/parth.jpg"
+                    alt="Parth Latta"
+                    className="team_img"
+                  />
+                  <h4>Parth Latta</h4>
+                  <p className="role">Editor/Manager</p>
+                  <p className="faction_name">
+                    Faction: Content Craftsmen ✍️📜
+                  </p>
+                  <p className="faction_description">
+                    Shaping stories and managing content with precision.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

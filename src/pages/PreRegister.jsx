@@ -4,28 +4,59 @@ import "../assets/css/pre-register.css";
 
 function PreRegister() {
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false); // Loading state
+
+  const spinnerStyle = {
+    margin: "10px auto",
+    border: "4px solid #f3f3f3",
+    borderTop: "4px solid #3498db",
+    borderRadius: "50%",
+    width: "24px",
+    height: "24px",
+    animation: "spin 0.8s linear infinite",
+  };
+
+  const spinAnimation = `
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  `;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Start loading
 
     try {
-      const response = await sendEmailToDB({ email }); // Sending only the email
+      const response = await sendEmailToDB({ email, name, username });
 
       if (response.status) {
         setMessage("Thank you for pre-registering!");
-        setEmail(""); // Clear the input field
+        setEmail(""); // Clear the input fields
+        setName("");
+        setUsername("");
       } else {
         setMessage("Something went wrong. Please try again.");
       }
     } catch (error) {
-      setMessage("Error:The Email Already exists or the server is unable to register");
+      setMessage("Error: The email already exists.");
       console.error("Pre-registration failed:", error);
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
 
   return (
     <>
+      <style>{spinAnimation}</style>
+
       {/* Banner Section */}
       <section className="pre_register_banner">
         <div className="container text-center">
@@ -83,6 +114,30 @@ function PreRegister() {
             <h2 className="form_heading">Pre-Register Today</h2>
             <form onSubmit={handleSubmit}>
               <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="username">Username</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="username"
+                  placeholder="Enter your username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input
                   type="email"
@@ -94,9 +149,10 @@ function PreRegister() {
                   required
                 />
               </div>
-              <button type="submit" className="btn_submit">
-                Pre-Register Now
+              <button type="submit" className="btn_submit" disabled={loading}>
+                {loading ? "Submitting..." : "Pre-Register Now"}
               </button>
+              {loading && <div style={spinnerStyle}></div>}
               {message && <div className="alert_message">{message}</div>}
             </form>
           </div>
