@@ -17,7 +17,7 @@ function Livestreams() {
             <div className="col-md-7 offset-sm-1">
               <div className="live_stareams_slide owl-carousel">
                 <div className="live_stareams_slide_img">
-                  <img src="img/live_streams_1.png" alt="" />
+                  <img src="img/live_streams_1.png" alt="" loading="lazy" />
                   <div className="extends_video">
                     <a
                       id="play-video_1"
@@ -29,7 +29,7 @@ function Livestreams() {
                   </div>
                 </div>
                 <div className="live_stareams_slide_img">
-                  <img src="img/live_streams_2.png" alt="" />
+                  <img src="img/live_streams_2.png" alt="" loading="lazy" />
                   <div className="extends_video">
                     <a
                       id="play-video_1"
@@ -41,7 +41,7 @@ function Livestreams() {
                   </div>
                 </div>
                 <div className="live_stareams_slide_img">
-                  <img src="img/live_streams_1.png" alt="" />
+                  <img src="img/live_streams_1.png" alt="" loading="lazy" />
                   <div className="extends_video">
                     <a
                       id="play-video_1"
@@ -53,7 +53,7 @@ function Livestreams() {
                   </div>
                 </div>
                 <div className="live_stareams_slide_img">
-                  <img src="img/live_streams_2.png" alt="" />
+                  <img src="img/live_streams_2.png" alt="" loading="lazy" />
                   <div className="extends_video">
                     <a
                       id="play-video_1"
@@ -65,7 +65,7 @@ function Livestreams() {
                   </div>
                 </div>
                 <div className="live_stareams_slide_img">
-                  <img src="img/live_streams_1.png" alt="" />
+                  <img src="img/live_streams_1.png" alt="" loading="lazy" />
                   <div className="extends_video">
                     <a
                       id="play-video_1"
@@ -77,7 +77,7 @@ function Livestreams() {
                   </div>
                 </div>
                 <div className="live_stareams_slide_img">
-                  <img src="img/live_streams_2.png" alt="" />
+                  <img src="img/live_streams_2.png" alt="" loading="lazy" />
                   <div className="extends_video">
                     <a
                       id="play-video_1"
@@ -89,7 +89,7 @@ function Livestreams() {
                   </div>
                 </div>
                 <div className="live_stareams_slide_img">
-                  <img src="img/live_streams_1.png" alt="" />
+                  <img src="img/live_streams_1.png" alt="" loading="lazy" />
                   <div className="extends_video">
                     <a
                       id="play-video_1"
@@ -101,7 +101,7 @@ function Livestreams() {
                   </div>
                 </div>
                 <div className="live_stareams_slide_img">
-                  <img src="img/live_streams_2.png" alt="" />
+                  <img src="img/live_streams_2.png" alt="" loading="lazy" />
                   <div className="extends_video">
                     <a
                       id="play-video_1"

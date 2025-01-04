@@ -50,6 +50,7 @@ body {
   color: #ddd;
 }
 
+/* Roadmap Items */
 .roadmap_item {
   background: linear-gradient(145deg, #4d0000, #8b0000);
   color: #fff;
@@ -60,6 +61,10 @@ body {
   text-align: center;
   font-family: "Cinzel", serif;
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%; /* Ensures uniform card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .roadmap_item:hover {
@@ -73,8 +78,20 @@ body {
   text-shadow: 0 0 8px red;
 }
 
-.blood_glow p {
+.blood_glow p,
+.blood_glow ul {
   color: #eee;
+}
+
+.blood_glow li {
+  margin-bottom: 8px;
+}
+
+/* Highlight important keywords */
+.blood_glow li span.highlight {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.8);
 }
 
 /* Meet Our Squad */
@@ -110,4 +127,19 @@ body {
   background: #ff4d4d;
   box-shadow: 0 0 20px 4px rgba(255, 0, 0, 0.9);
   transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .roadmap_heading {
+    font-size: 1.5rem;
+  }
+
+  .roadmap_subtitle {
+    font-size: 1rem;
+  }
+
+  .roadmap_item {
+    padding: 15px;
+  }
 }

@@ -10,25 +10,53 @@ function ClientLogo() {
             <div className="col-lg-12">
               <div className="client_logo_slider owl-carousel d-flex justify-content-between">
                 <div className="single_client_logo">
-                  <img src="img/client_logo/client_logo_1.png" alt="" />
+                  <img
+                    src="img/client_logo/client_logo_1.png"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
                 <div className="single_client_logo">
-                  <img src="img/client_logo/client_logo_2.png" alt="" />
+                  <img
+                    src="img/client_logo/client_logo_2.png"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
                 <div className="single_client_logo">
-                  <img src="img/client_logo/client_logo_3.png" alt="" />
+                  <img
+                    src="img/client_logo/client_logo_3.png"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
                 <div className="single_client_logo">
-                  <img src="img/client_logo/client_logo_4.png" alt="" />
+                  <img
+                    src="img/client_logo/client_logo_4.png"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
                 <div className="single_client_logo">
-                  <img src="img/client_logo/client_logo_5.png" alt="" />
+                  <img
+                    src="img/client_logo/client_logo_5.png"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
                 <div className="single_client_logo">
-                  <img src="img/client_logo/client_logo_1.png" alt="" />
+                  <img
+                    src="img/client_logo/client_logo_1.png"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
                 <div className="single_client_logo">
-                  <img src="img/client_logo/client_logo_2.png" alt="" />
+                  <img
+                    src="img/client_logo/client_logo_2.png"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>

@@ -13,6 +13,7 @@ function AboutUs() {
                 <img
                   src="img/about_img.png"
                   alt="IceShard Games"
+                  loading="lazy"
                   className="img-fluid"
                   style={{
                     maxWidth: "100%",
@@ -59,6 +60,7 @@ function AboutUs() {
               src="img/home/vision.jpg"
               alt="Our Vision"
               className="img-fluid"
+              loading="lazy"
               style={{
                 maxWidth: "100%",
                 height: "auto",
@@ -110,6 +112,7 @@ function AboutUs() {
                   src={feature.img}
                   alt={feature.title}
                   className="img-fluid"
+                  loading="lazy"
                   style={{
                     width: "100%",
                     height: "250px",

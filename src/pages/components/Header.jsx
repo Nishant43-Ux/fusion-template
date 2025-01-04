@@ -39,6 +39,7 @@ const Header = () => {
                       src="img/logos/default_logo.png"
                       alt="logo"
                       className="responsive-img"
+                      loading="lazy"
                     />
                   )}
                 </a>

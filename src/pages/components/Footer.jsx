@@ -13,6 +13,7 @@ const Footer = () => (
                   <img
                     src="img/logos/default_logo.png"
                     alt="logo"
+                    loading="lazy"
                     className="-img"
                   />{" "}
                 </a>

@@ -51,6 +51,7 @@ function Team() {
                     src="img/Team/ceo.jpg"
                     alt="Nishant Latiyal"
                     className="team_img"
+                    loading="lazy"
                   />
                   <h4>Nishant Latiyal</h4>
                   <p className="role">Founder/CEO</p>
@@ -68,6 +69,7 @@ function Team() {
                   <img
                     src="img/Team/ayush_saini.jpg"
                     alt="Ayush Saini"
+                    loading="lazy"
                     className="team_img"
                   />
                   <h4>Ayush Saini</h4>
@@ -86,6 +88,7 @@ function Team() {
                     src="img/Team/shaswat.jpg"
                     alt="Shashwat"
                     className="team_img"
+                    loading="lazy"
                   />
                   <h4>Shashwat</h4>
                   <p className="role">CMO</p>
@@ -99,12 +102,13 @@ function Team() {
               </div>
 
               {/* Senior Graphic Designer */}
-              <div className="col-md-4">
+              {/* <div className="col-md-4">
                 <div className="faction_card text-center faction_design">
                   <img
                     src="img/Team/khwaish.jpg"
                     alt="Khwaish Verma"
                     className="team_img"
+                    loading="lazy"
                   />
                   <h4>Khwaish Verma</h4>
                   <p className="role">Senior Graphic Designer</p>
@@ -113,7 +117,7 @@ function Team() {
                     Creating stunning visuals to dazzle and inspire.
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Senior Concept Artist */}
               <div className="col-md-4">
@@ -121,6 +125,7 @@ function Team() {
                   <img
                     src="img/Team/pranav.jpg"
                     alt="Pranav Kapoor"
+                    loading="lazy"
                     className="team_img"
                   />
                   <h4>Pranav Kapoor</h4>
@@ -141,6 +146,7 @@ function Team() {
                     src="img/Team/aryan.jpg"
                     alt="Aryan"
                     className="team_img"
+                    loading="lazy"
                   />
                   <h4>Aryan</h4>
                   <p className="role">VR/AR Specialist</p>
@@ -158,6 +164,7 @@ function Team() {
                     src="img/Team/Ayush_1.jpg"
                     alt="Ayush Pahuja"
                     className="team_img"
+                    loading="lazy"
                   />
                   <h4>Ayush Pahuja</h4>
                   <p className="role">Full-Stack Developer</p>
@@ -175,6 +182,7 @@ function Team() {
                     src="img/Team/parth.jpg"
                     alt="Parth Latta"
                     className="team_img"
+                    loading="lazy"
                   />
                   <h4>Parth Latta</h4>
                   <p className="role">Editor/Manager</p>
