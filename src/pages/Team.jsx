@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import "../assets/css/Team.css";
 
 function Team() {
@@ -75,6 +76,22 @@ function Team() {
                   <p className="faction_name">Faction: The Overseers 👁️‍🗨️</p>
                   <p className="faction_description">
                     Keeping resources balanced and the treasury secure.
+                  </p>
+                </div>
+              </div>
+              {/* Temp */}
+              <div className="col-md-4">
+                <div className="faction_card text-center faction_lead">
+                  <img
+                    src="img/Team/hari.jpg"
+                    alt="Ayush Saini"
+                    className="team_img"
+                  />
+                  <h4>Hari Hara</h4>
+                  <p className="role">Head Business Analyst</p>
+                  <p className="faction_name">Faction: The Overseers 👁️‍🗨️</p>
+                  <p className="faction_description">
+                    Analysing the faction's financials and providing valuable insights.
                   </p>
                 </div>
               </div>
