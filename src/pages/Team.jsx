@@ -91,7 +91,7 @@ function Team() {
                   <p className="role">Head Business Analyst</p>
                   <p className="faction_name">Faction: The Overseers 👁️‍🗨️</p>
                   <p className="faction_description">
-                    Analysing the faction's financials and providing valuable insights.
+                    galvanizing and providing valuable insights.
                   </p>
                 </div>
               </div>
